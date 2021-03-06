@@ -3,5 +3,14 @@
         "eslint 'src/**' --fix",
         "npm run test: staged",
         "git add"
-    ]
+    ],
+    "extends": [
+        "plugin:prettier/recommended"
+      ],
+    
+      "plugins": ["prettier"],
+    
+      "rules": {
+        "prettier/prettier": "error"
+      }
 }
