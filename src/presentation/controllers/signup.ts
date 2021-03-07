@@ -1,6 +1,7 @@
 import { HttpResponse, HttpRequest } from '../protocols/http'
 
 export class SignUpController {
+  // @ts-expect-error
   handle (httpRequest: HttpRequest): HttpResponse {
     if (!httpRequest.body.name) {
       return {
